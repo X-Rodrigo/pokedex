@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: gray;
+  flex-direction: column;
+  justify-content: center;
+}
+.app-header{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.app-header-title{
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 7%;
+}
+.app-header-btns-containers{
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-evenly;
+}
+.app-header-search{
+  display: flex;
+  width: 50%;
+  height:40%;
+  padding: 1%;
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  font-size: 17px;
+}
+.app-header-btn-search{
+  display: flex;
+  width: 20%;
+  height:40%;
+  padding: 1%;
+  justify-content: center;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 17px;
+  cursor: pointer;
+  
+}
+.app-header-btn-add{
+  display: flex;
+  width: 20%;
+  height:40%;
+  padding: 1%;
+  justify-content: center;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.app-content{
+  display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
+}
+.app-content-container{
+  display: flex;
+  width: 50%;
+  margin-bottom: 10%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: rgb(62, 122, 175);
+  border-radius: 10px;
+  padding: 20px;
 }
